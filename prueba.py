@@ -2,7 +2,7 @@
 import json, os, random
 from PIL import Image, ImageDraw, ImageFont
 
-OUT = os.path.dirname(os.path.abspath(__file__)) + "/out"
+OUT = os.path.dirname(os.path.abspath(__file__)) + "/sprites"
 os.makedirs(OUT, exist_ok=True)
 
 # ---------- Paleta "Duermevela" (24 colores) ----------
@@ -248,8 +248,16 @@ with open(f"{OUT}/sprites.json", "w", encoding="utf-8") as f:
 
 # ---------- Vista previa ampliada ----------
 S = 5
-font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 18)
-small = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 12)
+def cargar_fuente(nombres, tam):
+    rutas = ["/usr/share/fonts/truetype/dejavu/", "/usr/share/fonts/dejavu-sans-fonts/",
+             "/usr/share/fonts/dejavu/", "C:/Windows/Fonts/", "/Library/Fonts/"]
+    for r in rutas:
+        for n in nombres:
+            try: return ImageFont.truetype(r + n, tam)
+            except OSError: pass
+    return ImageFont.load_default(size=tam)
+font = cargar_fuente(["DejaVuSans-Bold.ttf", "arialbd.ttf"], 18)
+small = cargar_fuente(["DejaVuSans.ttf", "arial.ttf"], 12)
 W_, H_ = 1180, 1080
 pv = Image.new("RGBA", (W_, H_), hex2rgba("#101019"))
 dr = ImageDraw.Draw(pv)
