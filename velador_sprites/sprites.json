@@ -1,0 +1,368 @@
+{
+  "tile_size": 16,
+  "sheets": {
+    "velador": {
+      "file": "velador.png",
+      "frames": {
+        "velador_down_idle": [
+          0,
+          0,
+          16,
+          16
+        ],
+        "velador_down_walk1": [
+          16,
+          0,
+          16,
+          16
+        ],
+        "velador_down_walk2": [
+          32,
+          0,
+          16,
+          16
+        ],
+        "velador_up_idle": [
+          0,
+          16,
+          16,
+          16
+        ],
+        "velador_up_walk1": [
+          16,
+          16,
+          16,
+          16
+        ],
+        "velador_up_walk2": [
+          32,
+          16,
+          16,
+          16
+        ],
+        "velador_right_idle": [
+          0,
+          32,
+          16,
+          16
+        ],
+        "velador_right_walk1": [
+          16,
+          32,
+          16,
+          16
+        ],
+        "velador_right_walk2": [
+          32,
+          32,
+          16,
+          16
+        ],
+        "velador_left_idle": [
+          0,
+          48,
+          16,
+          16
+        ],
+        "velador_left_walk1": [
+          16,
+          48,
+          16,
+          16
+        ],
+        "velador_left_walk2": [
+          32,
+          48,
+          16,
+          16
+        ]
+      }
+    },
+    "soñadores": {
+      "file": "soñadores.png",
+      "frames": {
+        "anciano_idle": [
+          0,
+          0,
+          16,
+          16
+        ],
+        "anciano_parpadeo": [
+          16,
+          0,
+          16,
+          16
+        ],
+        "nina_idle": [
+          0,
+          16,
+          16,
+          16
+        ],
+        "nina_parpadeo": [
+          16,
+          16,
+          16,
+          16
+        ],
+        "madre_idle": [
+          0,
+          32,
+          16,
+          16
+        ],
+        "madre_parpadeo": [
+          16,
+          32,
+          16,
+          16
+        ],
+        "eco_idle": [
+          0,
+          48,
+          16,
+          16
+        ],
+        "eco_walk1": [
+          16,
+          48,
+          16,
+          16
+        ]
+      }
+    },
+    "huesped": {
+      "file": "huesped.png",
+      "frames": {
+        "huesped_latente_a": [
+          0,
+          0,
+          16,
+          32
+        ],
+        "huesped_latente_b": [
+          16,
+          0,
+          16,
+          32
+        ],
+        "huesped_acecha_a": [
+          0,
+          32,
+          16,
+          32
+        ],
+        "huesped_acecha_b": [
+          16,
+          32,
+          16,
+          32
+        ],
+        "huesped_caza_a": [
+          0,
+          64,
+          16,
+          32
+        ],
+        "huesped_caza_b": [
+          16,
+          64,
+          16,
+          32
+        ]
+      }
+    },
+    "tiles": {
+      "file": "tiles.png",
+      "frames": {
+        "suelo_madera": [
+          0,
+          0,
+          16,
+          16
+        ],
+        "suelo_baldosa": [
+          16,
+          0,
+          16,
+          16
+        ],
+        "pared": [
+          32,
+          0,
+          16,
+          16
+        ],
+        "ventana": [
+          48,
+          0,
+          16,
+          16
+        ],
+        "puerta_cerrada": [
+          0,
+          16,
+          16,
+          16
+        ],
+        "puerta_abierta": [
+          16,
+          16,
+          16,
+          16
+        ],
+        "cama": [
+          32,
+          16,
+          16,
+          16
+        ],
+        "cama_ocupada": [
+          48,
+          16,
+          16,
+          16
+        ],
+        "vacio_transito": [
+          0,
+          32,
+          16,
+          16
+        ],
+        "umbral_luz": [
+          16,
+          32,
+          16,
+          16
+        ],
+        "grieta": [
+          32,
+          32,
+          16,
+          16
+        ]
+      }
+    },
+    "objetos": {
+      "file": "objetos.png",
+      "frames": {
+        "foto": [
+          0,
+          0,
+          16,
+          16
+        ],
+        "cajita_musica": [
+          16,
+          0,
+          16,
+          16
+        ],
+        "carta": [
+          32,
+          0,
+          16,
+          16
+        ],
+        "vela_a": [
+          48,
+          0,
+          16,
+          16
+        ],
+        "vela_b": [
+          0,
+          16,
+          16,
+          16
+        ],
+        "llave": [
+          16,
+          16,
+          16,
+          16
+        ],
+        "caja_cerrada": [
+          32,
+          16,
+          16,
+          16
+        ],
+        "caja_abierta": [
+          48,
+          16,
+          16,
+          16
+        ]
+      }
+    },
+    "ui": {
+      "file": "ui.png",
+      "frames": {
+        "ojo_don": [
+          0,
+          0,
+          16,
+          16
+        ],
+        "luna_cordura": [
+          16,
+          0,
+          16,
+          16
+        ]
+      }
+    }
+  },
+  "animaciones": {
+    "velador_caminar": [
+      "idle",
+      "walk1",
+      "idle",
+      "walk2"
+    ],
+    "vela": [
+      "vela_a",
+      "vela_b"
+    ],
+    "huesped_latente": [
+      "huesped_latente_a",
+      "huesped_latente_b"
+    ],
+    "huesped_acecha": [
+      "huesped_acecha_a",
+      "huesped_acecha_b"
+    ],
+    "huesped_caza": [
+      "huesped_caza_a",
+      "huesped_caza_b"
+    ]
+  },
+  "paleta": {
+    "K": "#0b0b12",
+    "N": "#050508",
+    "D": "#1b1b2a",
+    "G": "#3a3a52",
+    "m": "#56566e",
+    "g": "#6b6b85",
+    "L": "#a9a9c0",
+    "W": "#e6e3d8",
+    "S": "#d9a886",
+    "s": "#a8735a",
+    "C": "#3f5a7a",
+    "c": "#2a3d57",
+    "B": "#5a3b2a",
+    "b": "#3b2619",
+    "Y": "#f2c46b",
+    "O": "#c9773a",
+    "R": "#b3202f",
+    "r": "#4a0f18",
+    "P": "#6a4c8c",
+    "p": "#b59de0",
+    "v": "#45325e",
+    "T": "#4f7a6a",
+    "t": "#2f4f45",
+    "Q": "#c77d9a",
+    "q": "#8e4f6b"
+  }
+}
